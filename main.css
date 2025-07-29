@@ -1,0 +1,109 @@
+:root {
+  --color-highlight: hsl(75, 94%, 57%);
+  --color-dark: hsl(0, 0%, 8%);
+  --color-medium: hsl(0, 0%, 12%);
+  --color-light: hsl(0, 0%, 20%);
+
+  --color-attr:hsl(0, 34%, 39%);
+
+  --text-size: 14px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background-color: var(--color-dark);
+  width: 100dvw;
+}
+
+main {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  color: #fff;
+}
+
+.card {
+  background-color: var(--color-medium);
+  width: 20em;
+  margin-top: auto;
+  border-radius: 15px;
+}
+
+.user-info {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.user_avatar {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.user_name {
+  font-size: 1.6em;
+  margin-bottom: 0;
+}
+
+.user_loc{
+    font-size: var(--text-size);
+    color: var(--color-highlight);
+    font-weight: 400;
+}
+
+.user_desc {
+  font-size: var(--text-size);
+  font-weight: 200;
+}
+
+
+.links {
+  text-align: center;
+  padding: 0 1.2em;
+}
+
+.links > p {
+  background-color: var(--color-light);
+  border-radius: .5em;
+  padding: 1em 0;
+  font-weight: 700;
+}
+
+.links > p:hover {
+  background-color: var(--color-highlight);
+  color: var(--color-medium);
+  cursor: pointer;
+}
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--color-attr);
+  margin-top: auto;
+}
+
+.attribution a {
+  color: hsl(228, 20%, 49%);
+}
+
+
+@media (max-width: 320px) {
+  .card {
+    width: 18em;
+  }
+
+
+  .links > p {
+    font-weight: 400;
+    font-size: .9em;
+  }
+}
